@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Facebook, MessageCircle } from 'lucide-react';
+import { Github, Instagram, Linkedin, Facebook, MessageCircle, Youtube, Link2, Send } from 'lucide-react';
 
 const socialLinks = [
   {
@@ -6,6 +6,12 @@ const socialLinks = [
     href: 'https://chat.whatsapp.com/Eu6GjTChtMs7dwsdhX9pvl',
     icon: MessageCircle,
     hoverColor: 'hover:text-green-500',
+  },
+  {
+    name: 'YouTube',
+    href: 'https://www.youtube.com/@developerstudentclubsrit9143',
+    icon: Youtube,
+    hoverColor: 'hover:text-red-500',
   },
   {
     name: 'GitHub',
@@ -31,6 +37,18 @@ const socialLinks = [
     icon: Facebook,
     hoverColor: 'hover:text-blue-600',
   },
+  {
+    name: 'Linktree',
+    href: 'https://linktr.ee/gdscmsrit',
+    icon: Link2,
+    hoverColor: 'hover:text-green-400',
+  },
+  {
+    name: 'Telegram',
+    href: 'https://t.me/dscrit',
+    icon: Send,
+    hoverColor: 'hover:text-blue-400',
+  },
 ];
 
 const Footer = () => {
@@ -45,6 +63,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`text-gray-400 transition-colors duration-200 ${link.hoverColor}`}
+              title={link.name}
             >
               <link.icon className="h-6 w-6" />
             </a>

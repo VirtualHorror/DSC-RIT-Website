@@ -10,17 +10,21 @@ export default {
           100: '#ffedd5',
           200: '#fed7aa',
           300: '#feb272',
-          400: '#FD9346', // Aligno-inspired orange
-          500: '#FB7E28', // Aligno-inspired orange
+          400: '#FD9346',
+          500: '#FB7E28',
           600: '#EA6C09',
           700: '#C25A0C',
           800: '#9A4812',
           900: '#7C3912',
           950: '#431206',
         },
-        'dsc-gold': {
-          400: '#FFB258',
-          500: '#F5A142',
+        'dsc-blue': {
+          400: '#4285F4',
+          500: '#357ABD',
+        },
+        'dsc-red': {
+          400: '#EA4335',
+          500: '#B31412',
         },
       },
       fontFamily: {

@@ -12,13 +12,15 @@ function App() {
     <Router>
       <div className="min-h-screen bg-dsc-dark text-white">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/alumni" element={<Alumni />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/alumni" element={<Alumni />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
